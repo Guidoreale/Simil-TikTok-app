@@ -18,7 +18,10 @@ class ExploreScreen extends StatelessWidget {
               strokeWidth: 2,
               color: AppTheme().getTheme().secondaryHeaderColor,
             ))
-          : VideoScollableView(videos: exploreProvider.videos),
+          : VideoScollableView(
+              videos: exploreProvider.videos,
+              isPlaying: exploreProvider.isPlaying,
+            ),
     );
   }
 }

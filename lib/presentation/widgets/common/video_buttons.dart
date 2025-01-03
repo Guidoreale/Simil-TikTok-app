@@ -23,10 +23,11 @@ class VideoButtons extends StatelessWidget {
             value: video.views, iconData: Icons.remove_red_eye_outlined),
         SizedBox(height: 10),
         SpinPerfect(
-            infinite: true,
-            duration: const Duration(seconds: 10),
-            child: const _CustomIconButton(
-                value: 0, iconData: Icons.play_circle_outline)),
+          infinite: true,
+          duration: const Duration(seconds: 10),
+          child: const _CustomIconButton(
+              value: 0, iconData: Icons.play_circle_outline),
+        ),
         SizedBox(height: 10),
       ],
     );

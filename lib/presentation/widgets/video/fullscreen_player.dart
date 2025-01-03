@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simil_tiktok/presentation/providers/explore_provider.dart';
 import 'package:simil_tiktok/presentation/widgets/video/video_bg.dart';
 import 'package:video_player/video_player.dart';
 
@@ -18,7 +19,7 @@ class FullScreenPlayer extends StatefulWidget {
 
 class _FullScreenPlayerState extends State<FullScreenPlayer> {
   late VideoPlayerController _controller;
-  bool _isPlaying = true;
+  bool isPlaying = true;
 
   @override
   void initState() {

@@ -5,7 +5,9 @@ import 'package:simil_tiktok/presentation/widgets/video/fullscreen_player.dart';
 
 class VideoScollableView extends StatelessWidget {
   final List<VideoPost> videos;
-  const VideoScollableView({super.key, required this.videos});
+  final bool isPlaying;
+  const VideoScollableView(
+      {super.key, required this.videos, this.isPlaying = false});
 
   @override
   Widget build(BuildContext context) {
